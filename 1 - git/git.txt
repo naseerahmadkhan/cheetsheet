@@ -1,4 +1,8 @@
 git init    #initialize an existing directory as a git repo
 git clone git@github.com:naseerahmadkhan/cheetsheet.git
+
 git config --global user.name "naseer khan"
 git config --global user.email "naseer@edatasolutions.com.au"
+
+git config user.name "Naseer Ahmad Khan"
+git config user.email "naseer4uplus@gmail.com"
