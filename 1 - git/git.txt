@@ -3,7 +3,6 @@ git clone git@github.com:naseerahmadkhan/cheetsheet.git
 
 git config --global user.name "naseer khan"
 git config --global user.email "naseer@edatasolutions.com.au"
-
 git config user.name "Naseer Ahmad Khan"
 git config user.email "naseer4uplus@gmail.com"
 
@@ -14,6 +13,7 @@ git add .           # add all files
 
 git diff            # dif of what is changed but not staged
 git diff --staged   # diff of what is staged but not yet committed
+git diff branchB...branchA  #show the diff of what is in branchA that is not in branchB
 git commit -m "msg" # commit your staged content as a new commit
 
 
@@ -23,13 +23,24 @@ git checkout dev    # switch to another branch
 
 
 git log             # show all commits in the current branchs's history
+git log branchB..branchA    # show the commits on branchA that are not on branchB
 
-
-git fetch           # fetch down all the branches from that Git remote
-git pull            # fetch and merge any commits from the tracking remote branch
+git fetch           # Used to fetch all changes from the remote repository to the local repository without merging into the current working directory
+git pull            # Brings the copy of all the changes from a remote repository and merges them into the current working directory
 
 
 git stash           # save modified and staged changes
 git stash list      # list stack order of stashed file changes
 git stash pop       # write working from top of stash stack
 git stash drop      # discard the changes from top of stash stack
+
+
+git reset           # To remove all files from staging area use
+git reset HEAD
+git reset file.txt  # To remove specific file use 
+git reset --hard    # revert changes
+
+
+
+
+git rm --cached -r dirname # if wrongly committed and unintentionally added a directory that should have been ignored
