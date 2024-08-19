@@ -28,3 +28,8 @@ git log             # show all commits in the current branchs's history
 git fetch           # fetch down all the branches from that Git remote
 git pull            # fetch and merge any commits from the tracking remote branch
 
+
+git stash           # save modified and staged changes
+git stash list      # list stack order of stashed file changes
+git stash pop       # write working from top of stash stack
+git stash drop      # discard the changes from top of stash stack
