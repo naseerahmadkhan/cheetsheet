@@ -6,6 +6,9 @@ git config --global user.email "naseer@edatasolutions.com.au"
 git config user.name "Naseer Ahmad Khan"
 git config user.email "naseer4uplus@gmail.com"
 
+git config user.name
+git config user.email
+
 git status
 
 git add [filename]  # add a file 
@@ -17,9 +20,15 @@ git diff branchB...branchA  #show the diff of what is in branchA that is not in 
 git commit -m "msg" # commit your staged content as a new commit
 
 
-git branch          # list your branches
 git branch dev      # create a new branch at the current commit
+git branch          # list your local branches
+git branch -l       # list your local branches
+git branch -r       # Lists all remote branches.
+git branch -a       # Lists all local and remote branches.
+git branch -d dev   # Deletes the specified branch.
+
 git checkout dev    # switch to another branch
+git checkout -b dev # Creates a new branch and switches to it. 
 
 
 git log             # show all commits in the current branchs's history
@@ -37,10 +46,28 @@ git stash drop      # discard the changes from top of stash stack
 
 git reset           # To remove all files from staging area use
 git reset HEAD
-git reset file.txt  # To remove specific file use 
-git reset --hard    # revert changes
+git reset e5ec16659faed23166f54b2c35464996792999c5  #Moves head to specified commit
+git reflog          # to see a log of changes to HEAD
 
+git reset file.txt  # To remove specific file use 
+git restore file.txt #  is used to restore file contents to a specific state.
+
+git reset --hard    # revert changes
+git clean -fd
 
 
 
 git rm --cached -r dirname # if wrongly committed and unintentionally added a directory that should have been ignored
+
+
+
+git remote show origin
+git remote -v           #This will print all your remotes' fetch/push URLs:
+git remote rm origin
+git remote add origin https://github.com/newuser/newrepo.git
+git remote set-url origin git@github.com:USERNAME/REPO.git
+git push -u origin master
+
+
+
+git merge dev       # Merges the specified branch into the current branch.
