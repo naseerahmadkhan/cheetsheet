@@ -17,3 +17,16 @@ setTimeout(()=>{
 },2000)
 
 console.clear()
+
+// work in browser
+console.log('%cHello world!', 'color: blue; font-size: xx-large');
+
+/* 
+Specifier Output
+%s Formats the value as a string
+%i or %d Formats the value as an integer
+%f Formats the value as a floating point value
+%o Formats the value as an expandable DOM element
+%O Formats the value as an expandable JavaScript object
+%c Applies CSS style rules to the output string as specified by the second parameter 
+*/
