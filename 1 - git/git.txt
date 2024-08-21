@@ -25,7 +25,8 @@ git branch          # list your local branches
 git branch -l       # list your local branches
 git branch -r       # Lists all remote branches.
 git branch -a       # Lists all local and remote branches.
-git branch -d dev   # Deletes the specified branch.
+git branch -d dev   # Safely deletes the branch if it has been merged.
+git branch -D dev   # Forcefully deletes the branch, regardless of its merge 
 
 git checkout dev    # switch to another branch
 git checkout -b dev # Creates a new branch and switches to it. 
