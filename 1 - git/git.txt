@@ -11,8 +11,11 @@ git config user.email
 
 git status
 
-git add [filename]  # add a file 
-git add .           # add all files
+git add [filename]       # add a file 
+git add .               # add all files
+git restore --staged file.js    # unstage specific file
+git restore --staged .  # unstage all file
+
 
 git diff            # dif of what is changed but not staged
 git diff --staged   # diff of what is staged but not yet committed
@@ -47,11 +50,14 @@ git stash drop      # discard the changes from top of stash stack
 
 git reset           # To remove all files from staging area use
 git reset HEAD
+2-js/4-comparisal-operator.js
 git reset e5ec16659faed23166f54b2c35464996792999c5  #Moves head to specified commit
 git reflog          # to see a log of changes to HEAD
 
 git reset file.txt  # To remove specific file use 
 git restore file.txt #  is used to restore file contents to a specific state.
+
+
 
 git reset --hard    # revert changes
 git clean -fd
