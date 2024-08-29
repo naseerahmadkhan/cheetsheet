@@ -13,8 +13,8 @@ git status
 
 git add [filename]              # add a file 
 git add .                       # add all files
-git restore --staged file.js    # unstage specific file
-git restore --staged .          # unstage all file
+git reset file.js    # unstage specific file
+git reset .          # unstage all file
 git commit -m "msg"             # commit your staged content as a new commit
 
 
@@ -50,7 +50,6 @@ git stash drop      # discard the changes from top of stash stack
 
 git reset           # To remove all files from staging area use
 git reset HEAD
-2-js/4-comparisal-operator.js
 git reset e5ec16659faed23166f54b2c35464996792999c5  #Moves head to specified commit
 git reflog          # to see a log of changes to HEAD
 
