@@ -48,7 +48,8 @@ git stash pop       # write working from top of stash stack
 git stash drop      # discard the changes from top of stash stack
 
 
-git reset           # To remove all files from staging area use
+git reset           # To remove all files from staging area 
+git reset --hard    # revert changes
 git reset HEAD
 git reset e5ec16659faed23166f54b2c35464996792999c5  #Moves head to specified commit
 git reflog          # to see a log of changes to HEAD
@@ -58,8 +59,7 @@ git restore file.txt #  is used to restore file contents to a specific state.
 
 
 
-git reset --hard    # revert changes
-git clean -fd
+git clean -fd       # remove untracked files and directories from your working directory
 
 
 
