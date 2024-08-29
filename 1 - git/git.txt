@@ -1,4 +1,4 @@
-git init    #initialize an existing directory as a git repo
+git init                        #initialize an existing directory as a git repo
 git clone git@github.com:naseerahmadkhan/cheetsheet.git
 
 git config --global user.name "naseer khan"
@@ -11,16 +11,16 @@ git config user.email
 
 git status
 
-git add [filename]       # add a file 
-git add .               # add all files
+git add [filename]              # add a file 
+git add .                       # add all files
 git restore --staged file.js    # unstage specific file
-git restore --staged .  # unstage all file
+git restore --staged .          # unstage all file
+git commit -m "msg"             # commit your staged content as a new commit
 
 
-git diff            # dif of what is changed but not staged
-git diff --staged   # diff of what is staged but not yet committed
-git diff branchB...branchA  #show the diff of what is in branchA that is not in branchB
-git commit -m "msg" # commit your staged content as a new commit
+git diff                        # dif of what is changed but not staged
+git diff --staged               # diff of what is staged but not yet committed
+git diff branchB...branchA      #show the diff of what is in branchA that is not in branchB
 
 
 git branch dev      # create a new branch at the current commit
