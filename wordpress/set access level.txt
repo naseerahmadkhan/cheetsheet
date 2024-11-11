@@ -1,0 +1,12 @@
+sudo chmod 755 /opt/lampp/htdocs/crystaled -R
+sudo chmod 755 /opt/lampp/htdocs/crystaled/wp-includes
+sudo chmod 644 /opt/lampp/htdocs/crystaled/.htaccess
+sudo chmod 644 /opt/lampp/htdocs/crystaled/wp-admin/index.php
+sudo chmod 755 /opt/lampp/htdocs/crystaled/wp-admin/js/
+sudo chmod 755 /opt/lampp/htdocs/crystaled/wp-content/themes
+sudo chmod 755 /opt/lampp/htdocs/crystaled/wp-content/plugins
+sudo chmod 755 /opt/lampp/htdocs/crystaled/wp-admin
+sudo chmod 755  /opt/lampp/htdocs/crystaled/wp-content
+sudo chmod 655 /opt/lampp/htdocs/crystaled/wp-config.php
+sudo chmod 777 /opt/lampp/htdocs/crystaled/wp-content/uploads
+

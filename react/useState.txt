@@ -1,0 +1,41 @@
+React UI Library
+let const var => react do not track variables
+State = > status, situation
+all the updates should go via states
+useState is a hook that give capability to change state in functional comp
+
+const [count, setcount] = useState(initialVal)
+
+count = this a read only variable. we can not directly change it. if you do no ui update
+
+setCount =  is function , that updates read only value
+
+
+useState() returns array
+we use destructuring
+0 index var
+1 index fun
+
+when we want to update ui on change of var
+
+ = useState(()=>{
+	return getInitialVal();
+});
+
+this will run only one
+
+
+
+setCount(count + 1);
+react do not immediate update val. it schedules in the scheduler
+setCount(count+1)
+setCount(count+1)
+setCount(count+1)
+
+now run the scheduler 
+
+react batches the update
+
+******************
+
+setCount((previousVal)=>{ return previousVal  + 1 })
